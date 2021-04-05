@@ -6,10 +6,10 @@ import Home from '../pages/home/home';
 const App = () => {
   return (
     <main role='main' className='container'>
-      <Header numItems={5} total={210} />
+      <Header />
       <Switch>
         <Route exact path='/' component={Home} />
-        <Route path='/' component={Cart} />
+        <Route path='/cart' component={Cart} />
       </Switch>
     </main>
   );

@@ -13,7 +13,7 @@ ReactDOM.render(
   <Provider store={store}>
     <ErrorBoundary>
       <BookstoreServiceProvider value={bookstoreService}>
-        <BrowserRouter>
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
           <App />
         </BrowserRouter>
       </BookstoreServiceProvider>
